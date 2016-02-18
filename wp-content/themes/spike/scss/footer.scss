@@ -1,0 +1,44 @@
+.site-footer {
+	background: $grey;
+	font-size: 0.8em;
+	color: mix(white, $grey, 60%);
+	padding: 2em 0;
+	
+	a {
+		color: darken($green, 4%);
+	}
+	
+	.alignright {
+		text-align: right;
+	}
+}
+
+.soc {
+	list-style: none;
+	
+	li {
+		display: inline-block;
+	}
+	a {
+		display: block;
+		width: 2.7em;
+		height: 2.7em;
+		border-radius: 2.7em;
+		border: 2px solid rgba(black,0.2);
+		
+		&:hover {
+			border-color: rgba(white,0.4);
+		}
+	}
+	
+	svg {
+		fill: white;
+	}
+}
+
+.twitter {
+	background-color: #55acee;
+}
+.facebook {
+	background-color: #3b5998;
+}

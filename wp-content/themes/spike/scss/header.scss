@@ -1,0 +1,47 @@
+.site-header {
+	border-top: 50px solid $green;
+}
+.site-branding {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 3em;
+}
+	.site-logo {
+		align-self: flex-end;
+		
+		a {
+			display: block;
+		}
+	}
+		.logo {
+			max-width: 100%;
+		}
+		
+	.site-title {
+		font-size: 1em;
+		text-transform: uppercase;
+		font-weight: 800;
+		letter-spacing: 0ex;
+		margin: 0;
+	}
+	.site-description {
+		background-color: $blue;
+		padding: 2.2em 1.5em 2em;
+		color: white;
+		text-transform: uppercase;
+		text-align: center;
+		border-bottom-left-radius: $border-radius;
+		border-bottom-right-radius: $border-radius;
+		
+		h2 {
+			font-size: 1.6rem;
+			color: white;
+		}
+		
+		.fancy-font {
+			font-size: 4rem;
+			line-height: 0.5;
+		}
+	}
+
