@@ -679,7 +679,7 @@ Global Classes
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.8em; } }
+    font-size: 1.5em; } }
 
 @media (max-width: 480px) {
   .contain {
@@ -754,6 +754,8 @@ Global Classes
       font-size: 2.8em; } }
 
 @media (max-width: 670px) {
+  .site-header {
+    border-top: 25px solid #95D600; }
   .site-branding {
     display: block;
     margin-bottom: 0; }

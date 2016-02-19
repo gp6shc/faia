@@ -63,6 +63,9 @@
 }
 
 @media (max-width: 670px) {
+	.site-header {
+		border-top: 25px solid $green;
+	}
 	.site-branding {
 		display: block;
 		margin-bottom: 0;
