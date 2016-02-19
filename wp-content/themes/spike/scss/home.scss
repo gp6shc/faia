@@ -163,6 +163,9 @@ input[type='submit'].success {
 }
 
 @media (max-width: 650px) {
+	.slider {
+		margin-bottom: 3em;
+	}
 	.cover {
 		min-width: 30%;
 		align-self: flex-start;
