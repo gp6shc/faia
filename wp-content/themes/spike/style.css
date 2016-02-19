@@ -755,7 +755,8 @@ Global Classes
 
 @media (max-width: 670px) {
   .site-branding {
-    display: block; }
+    display: block;
+    margin-bottom: 0; }
   .site-description {
     margin-left: 0; }
   .site-logo {
@@ -784,6 +785,7 @@ Global Classes
 
 .cover {
   min-width: 40%;
+  min-height: 300px;
   margin-right: 1em;
   background-size: contain;
   background-repeat: no-repeat;
@@ -792,7 +794,10 @@ Global Classes
 .bullets {
   list-style: none;
   display: block;
-  margin: 3em 0; }
+  margin: 3em 0;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center; }
   .bullets li {
     padding-left: 1.9em;
     margin-left: -1.9em;
@@ -916,6 +921,7 @@ input[type='submit'].success {
         -ms-flex-item-align: start;
             align-self: flex-start;
     padding-bottom: 60%;
+    min-height: 0;
     position: -webkit-sticky;
     top: -1em; } }
 

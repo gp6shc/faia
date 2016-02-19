@@ -19,6 +19,7 @@
 }
 .cover {
 	min-width: 40%;
+	min-height: 300px;
 	margin-right: 1em;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -28,6 +29,7 @@
 	list-style: none;
 	display: block;
 	margin: 3em 0;
+	align-self: center;
 
 	li {
 		padding-left: 1.9em;
@@ -165,6 +167,7 @@ input[type='submit'].success {
 		min-width: 30%;
 		align-self: flex-start;
 		padding-bottom: 60%;
+		min-height: 0;
 		position: -webkit-sticky;
 		top: -1em;
 	}
