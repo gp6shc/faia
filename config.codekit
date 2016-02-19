@@ -8993,7 +8993,7 @@
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/FAIA_Slider_003.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/wp-content\/uploads\/2016\/02\/FAIA_Slider_004.jpg": {
 		"fileType": 16384,
@@ -9004,18 +9004,18 @@
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/FAIA_Slider_004.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/wp-content\/uploads\/2016\/02\/Slider_image_001.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.28893e+06,
+		"initialSize": 134598,
 		"inputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/Slider_image_001.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/Slider_image_001.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/wp-content\/uploads\/2016\/02\/the_jungle_book__cover_by_aliciav.jpg": {
 		"fileType": 16384,
