@@ -141,7 +141,11 @@ Global Classes
 	padding-left: 2rem;
 	padding-right: 2rem;
 }
-
+@media (max-width: 768px) {
+	h1 {
+		font-size: 1.8em;
+	}
+}
 @media (max-width: 480px) {
 	.contain {
 		padding-left: 1em;
