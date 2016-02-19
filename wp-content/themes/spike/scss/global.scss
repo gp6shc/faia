@@ -58,6 +58,7 @@ Typography
 --------------------------------------------------------------*/
 body {
 	background: $green;
+	min-width: 320px;
 	font-size: 100%; // Match the defualt font size
 	font-family: $font;
 	line-height: 1.5;
@@ -138,5 +139,12 @@ Global Classes
 	margin: auto;
 	position: relative;
 	padding-left: 2rem;
-	padding-right: 2rem;;
+	padding-right: 2rem;
+}
+
+@media (max-width: 480px) {
+	.contain {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 }

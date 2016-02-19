@@ -8,13 +8,21 @@
 		color: darken($green, 4%);
 	}
 	
-	.alignright {
+}
+
+.site-info {
+	display: flex;
+	justify-content: space-between;
+	
+	div:last-child {
 		text-align: right;
 	}
 }
 
 .soc {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 	
 	li {
 		display: inline-block;
@@ -41,4 +49,8 @@
 }
 .fb {
 	background-color: #3b5998;
+}
+
+@media (max-width: 480px) {
+	
 }

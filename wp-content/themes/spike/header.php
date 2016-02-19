@@ -21,15 +21,15 @@
 	<header class="site-header" role="banner">
 	<div class="contain">
 		<div class="site-branding">
+			<div class="site-description">
+				<h2>The Short Road to Long-Term</h2>
+				<span class="fancy-font">Career Success.</span>
+			</div>
 			<div class="site-logo">
 				<a href="<?= esc_url( home_url( '/' ) ); ?>" rel="home">
 					<img src="<?= get_stylesheet_directory_uri() ?>/img/risk_management_logo.svg" class="logo" alt="RM">
 					<h1 class="site-title"><span class="first-word">Risk</span> Management Careers</h1>
 				</a>
-			</div>
-			<div class="site-description">
-				<h2>The Short Road to Long-Term</h2>
-				<span class="fancy-font">Career Success.</span>
 			</div>
 		</div>
 	</div>
