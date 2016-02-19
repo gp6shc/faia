@@ -920,9 +920,11 @@ input[type='submit'].success {
   .slider {
     height: 396px; } }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .slider {
-    margin-bottom: 3em; }
+    margin-bottom: 3em; } }
+
+@media (max-width: 650px) {
   .cover {
     min-width: 30%;
     -webkit-align-self: flex-start;

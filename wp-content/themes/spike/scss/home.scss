@@ -162,10 +162,13 @@ input[type='submit'].success {
 	}	
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
 	.slider {
 		margin-bottom: 3em;
 	}
+}
+
+@media (max-width: 650px) {
 	.cover {
 		min-width: 30%;
 		align-self: flex-start;
