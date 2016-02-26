@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "WolfCity";
+	src: url("fonts/WolfintheCity.ttf");
+}
+
 /*--------------------------------------------------------------
 Elements
 --------------------------------------------------------------*/
@@ -127,7 +132,7 @@ a {
 }
 
 .fancy-font {
-	font-family: 'Dancing Script', cursive;
+	font-family: 'WolfCity', cursive;
 	text-transform: lowercase;
 }
 
