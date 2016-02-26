@@ -813,7 +813,7 @@ Global Classes
 
 .cover {
   min-width: 40%;
-  min-height: 50vh;
+  padding-bottom: 57%;
   margin-right: 1em;
   background-size: contain;
   background-repeat: no-repeat;
@@ -868,7 +868,7 @@ Global Classes
     .wpcf7 p + p {
       margin-top: 0.5em; }
   .wpcf7 h2 {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: white;
     text-align: center;
     margin: 0 0 0.7em;
