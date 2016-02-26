@@ -795,7 +795,8 @@ Global Classes
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  position: relative; }
+  position: relative;
+  margin-bottom: 2em; }
 
 .content {
   width: -webkit-calc(100% - 320px - 3%);
@@ -957,7 +958,7 @@ input[type='submit'].success {
   .slider {
     height: 396px; } }
 
-@media (max-width: 930px) and (min-width: 701px) {
+@media (max-width: 840px) and (min-width: 701px) {
   .book-description {
     display: block; } }
 
@@ -989,8 +990,6 @@ input[type='submit'].success {
     -webkit-align-self: flex-start;
         -ms-flex-item-align: start;
             align-self: flex-start;
-    padding-bottom: 85%;
-    min-height: 0;
     position: -webkit-sticky;
     position: sticky;
     top: 0em; } }
@@ -1013,7 +1012,6 @@ input[type='submit'].success {
     display: block; }
   .cover {
     margin-right: 0;
-    padding-bottom: 100%;
     position: static; } }
 
 @media (max-width: 340px) {

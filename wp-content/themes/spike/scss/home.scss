@@ -16,6 +16,7 @@
 	display: flex;
 	justify-content: space-around;
 	position: relative;
+	margin-bottom: 2em;
 }
 
 .content {
@@ -183,12 +184,11 @@ input[type='submit'].success {
 	}	
 }
 
-@media (max-width: 930px) and (min-width: 701px) {
+@media (max-width: 840px) and (min-width: 701px) {
 	.book-description {
 		display: block;
 	}
 }
-
 
 @media (max-width: 768px) {
 	.slider {
@@ -214,8 +214,6 @@ input[type='submit'].success {
 	.cover {
 		min-width: 30%;
 		align-self: flex-start;
-		padding-bottom: 85%;
-		min-height: 0;
 		position: sticky;
 		top: 0em;
 	}
@@ -243,7 +241,6 @@ input[type='submit'].success {
 	}
 	.cover {
 		margin-right: 0;
-		padding-bottom: 100%;
 		position: static;
 	}
 }
