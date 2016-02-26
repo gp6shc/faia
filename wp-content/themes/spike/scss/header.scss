@@ -1,5 +1,5 @@
 .site-header {
-	border-top: 50px solid $green;
+	border-top: 25px solid $green;
 }
 .site-branding {
 	display: flex;
@@ -64,7 +64,7 @@
 
 @media (max-width: 700px) {
 	.site-header {
-		border-top: 25px solid $green;
+		border-top: 15px solid $green;
 	}
 	.site-branding {
 		display: block;

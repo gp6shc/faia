@@ -27,18 +27,22 @@ get_header(); ?>
 							<?php endforeach; ?>
 						</div>
 						
-						<?= $fields['content'] ?>
 						
-						<div class="book-description">
-							<div class="cover" style="background-image:url(<?= $fields['cover_art']?>)"></div>
-							<ul class="bullets">
-								<?php foreach ($fields['bullets'] as $bullet): ?>
-									<li><?= $bullet['bullet'] ?></li>
-								<?php endforeach; ?>
-							</ul>
+						<div class="main-frame">
+							<div class="content">
+								<?= $fields['content'] ?>
+								<div class="book-description">
+									<div class="cover" style="background-image:url(<?= $fields['cover_art']?>)"></div>
+									<ul class="bullets">
+										<?php foreach ($fields['bullets'] as $bullet): ?>
+											<li><?= $bullet['bullet'] ?></li>
+										<?php endforeach; ?>
+									</ul>
+								</div>
+							</div>
+							<?= do_shortcode('[contact-form-7 id="12" title="E-Book Download"]');?>
 						</div>
 						
-						<?= do_shortcode('[contact-form-7 id="12" title="E-Book Download"]');?>
 						
 					</div><!-- .entry-content -->
 					<footer class="entry-footer">

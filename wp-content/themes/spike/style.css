@@ -695,7 +695,7 @@ Global Classes
     text-align: center; } }
 
 .site-header {
-  border-top: 50px solid #95D600; }
+  border-top: 25px solid #95D600; }
 
 .site-branding {
   display: -webkit-box;
@@ -763,7 +763,7 @@ Global Classes
 
 @media (max-width: 700px) {
   .site-header {
-    border-top: 25px solid #95D600; }
+    border-top: 15px solid #95D600; }
   .site-branding {
     display: block;
     margin-bottom: 0; }
@@ -787,8 +787,22 @@ Global Classes
   height: auto;
   border-radius: 1.5rem; }
 
+.main-frame {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  position: relative; }
+
+.content {
+  width: -webkit-calc(100% - 320px - 3%);
+  width: calc(100% - 320px - 3%);
+  margin-right: 3%; }
+
 .book-description {
-  margin: 2em 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -808,7 +822,7 @@ Global Classes
 .bullets {
   list-style: none;
   display: block;
-  margin: 3em 0;
+  margin: 1.5em 0;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center; }
@@ -820,69 +834,84 @@ Global Classes
       content: '';
       width: 1.5em;
       position: absolute;
-      top: 0;
+      top: 5px;
       left: 0;
       bottom: 0;
       display: inline-block;
-      background: url(img/arrow.svg);
+      background: url(img/arrow-icon-bullet.png);
       background-repeat: no-repeat;
       background-size: contain; }
     .bullets li + li {
       margin-top: 1em; }
 
 .wpcf7 {
-  margin: 1em 0; }
+  width: 320px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5em;
+  margin: 5em 0;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  color: white; }
   .wpcf7 form {
-    background-color: #f2f2f3;
+    background-color: #95D600;
     display: block;
     margin: auto;
     max-width: 300px;
     padding: 1.5em 2em 2em;
     border-radius: 1.5rem; }
   .wpcf7 p {
-    margin: 0; }
+    margin: 0;
+    font-style: italic;
+    font-size: 0.9em; }
     .wpcf7 p + p {
       margin-top: 0.5em; }
   .wpcf7 h2 {
-    font-size: 1.35em;
+    font-size: 1.1em;
+    color: white;
     text-align: center;
-    margin: 0 0 0.5em; }
+    margin: 0 0 0.7em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase; }
   .wpcf7 input {
-    font-size: 1em;
+    color: #58595B;
+    font-size: 1rem;
+    font-style: normal;
     padding: 0.3em 0.75em;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 4px solid rgba(149, 214, 0, 0.4);
     box-sizing: border-box;
     border-radius: 1.5rem;
     width: 100%;
-    -webkit-transition: border-color 0.2s, box-shadow 0.2s;
-    transition: border-color 0.2s, box-shadow 0.2s; }
+    -webkit-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s; }
     .wpcf7 input:focus {
-      border-color: rgba(149, 214, 0, 0.8);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(149, 214, 0, 0.6);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 46, 109, 0.6);
       outline: 0 none; }
   .wpcf7 input[type='submit'] {
     color: white;
-    background-color: #002E6D;
     text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2em;
+    background-color: #002E6D;
     margin-top: 0.7em;
-    padding: 0.7em 1em;
+    padding: 0.6em 1em;
+    position: relative;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    font-size: 1em;
-    font-weight: 800;
-    border: 3px solid rgba(0, 0, 0, 0.4);
-    -webkit-transition: border-color 0.3s, background 0.3s;
-    transition: border-color 0.3s, background 0.3s; }
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 46, 109, 0.075) inset, 0 0 8px rgba(0, 46, 109, 0.6);
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s; }
     .wpcf7 input[type='submit']:hover {
-      border-color: rgba(255, 255, 255, 0.6); }
+      background-color: #0059d3; }
     .wpcf7 input[type='submit']:focus {
-      border-color: rgba(255, 255, 255, 0.6);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
-      outline: 0 none; }
+      outline: 0 none;
+      background-color: #0059d3; }
 
 input[type='submit'].loading {
-  background-color: #95D600;
+  background-color: #0059d3;
   border-color: rgba(0, 0, 0, 0.15);
   background-image: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 0.15) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.15) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 75%, transparent 75%, transparent);
@@ -928,20 +957,56 @@ input[type='submit'].success {
   .slider {
     height: 396px; } }
 
+@media (max-width: 930px) and (min-width: 701px) {
+  .book-description {
+    display: block; } }
+
 @media (max-width: 768px) {
   .slider {
     margin-bottom: 3em; } }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
+  .main-frame {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .content {
+    width: 100%;
+    margin: 0;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  .wpcf7 {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    position: static;
+    margin: 2em auto; }
   .cover {
     min-width: 30%;
     -webkit-align-self: flex-start;
         -ms-flex-item-align: start;
             align-self: flex-start;
-    padding-bottom: 60%;
+    padding-bottom: 85%;
     min-height: 0;
     position: -webkit-sticky;
-    top: -1em; } }
+    position: sticky;
+    top: 0em; } }
+
+@media (max-width: 500px) {
+  .book-description {
+    display: block; }
+  .cover {
+    top: 1em;
+    padding-bottom: 100%;
+    margin-right: 0; }
+  .bullets {
+    padding-top: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px); } }
 
 @media (max-width: 400px) {
   .book-description {
@@ -950,6 +1015,14 @@ input[type='submit'].success {
     margin-right: 0;
     padding-bottom: 100%;
     position: static; } }
+
+@media (max-width: 340px) {
+  .wpcf7 h2 {
+    font-size: 0.97em; } }
+
+@media (max-height: 500px) {
+  .wpcf7 {
+    top: 1em; } }
 
 .site-footer {
   background: #58595B;

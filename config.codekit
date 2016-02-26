@@ -8297,6 +8297,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/themes\/spike\/img\/arrow-icon-bullet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 783,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/spike\/img\/arrow-icon-bullet.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/spike\/img\/arrow-icon-bullet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/spike\/img\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
