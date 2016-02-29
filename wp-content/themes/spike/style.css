@@ -910,23 +910,20 @@ Global Classes
     .wpcf7 input[type='submit']:focus {
       outline: 0 none;
       background-color: #0059d3; }
-
-input[type='submit'].loading {
-  background-color: #0059d3;
-  border-color: rgba(0, 0, 0, 0.15);
-  background-image: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 0.15) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.15) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 75%, transparent 75%, transparent);
-  background-size: 40px 40px;
-  -webkit-animation: move-bg 0.75s infinite linear;
-          animation: move-bg 0.75s infinite linear; }
-
-input[type='submit'].error {
-  background-color: #fa5e5e;
-  border-color: rgba(0, 0, 0, 0.15); }
-
-input[type='submit'].success {
-  background-color: #95D600;
-  border-color: rgba(0, 0, 0, 0.15); }
+    .wpcf7 input[type='submit'].loading {
+      background-color: #0059d3;
+      border-color: rgba(0, 0, 0, 0.15);
+      background-image: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 0.15) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 75%, transparent 75%, transparent);
+      background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.15) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 75%, transparent 75%, transparent);
+      background-size: 40px 40px;
+      -webkit-animation: move-bg 0.75s infinite linear;
+              animation: move-bg 0.75s infinite linear; }
+    .wpcf7 input[type='submit'].error {
+      background-color: #fa5e5e;
+      border-color: rgba(0, 0, 0, 0.15); }
+    .wpcf7 input[type='submit'].success {
+      background-color: #95D600;
+      border-color: rgba(0, 0, 0, 0.15); }
 
 @-webkit-keyframes move-bg {
   0% {
