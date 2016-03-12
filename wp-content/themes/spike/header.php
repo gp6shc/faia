@@ -22,7 +22,7 @@
 		<div class="site-branding">
 			<div class="site-description">
 				<h2>The Short Road to Long-Term</h2>
-				<span class="fancy-font">Career Success.</span>
+				<span class="fancy-font">Career Success</span><span class="period">.</span>
 			</div>
 			<div class="site-logo">
 				<a href="<?= esc_url( home_url( '/' ) ); ?>" rel="home">

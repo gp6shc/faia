@@ -752,6 +752,9 @@ Global Classes
   .site-description .fancy-font {
     font-size: 6.2rem;
     line-height: 0.1; }
+  .site-description .period {
+    font-size: 2em;
+    line-height: 0; }
 
 @media (max-width: 825px) {
   .site-description {
