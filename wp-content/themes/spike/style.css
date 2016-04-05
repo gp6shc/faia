@@ -1061,6 +1061,10 @@ Global Classes
 
 .li {
   background-color: #0077b5; }
+  .li svg {
+    -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+            transform: scale(0.6); }
 
 .fb {
   background-color: #3b5998; }
