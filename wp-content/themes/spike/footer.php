@@ -93,6 +93,14 @@
 
 		jQuery(document).on('mailsent.wpcf7', function () {
 			successAnimation();
+			
+			var data = jQuery('.wpcf7-form').serializeArray();
+			
+			dataLayer.push({
+			  'name': data[5].value,
+			  'email': data[6].value,
+			  'event': 'bookDownload'
+			});
 		});
 		
 		
