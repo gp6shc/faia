@@ -38,7 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</div>
 			<div class="site-logo">
 				<a href="<?= esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img src="<?= get_stylesheet_directory_uri() ?>/img/risk_management_logo.svg" class="logo" alt="RM">
+					<img src="<?= get_stylesheet_directory_uri() ?>/img/rm_logo.svg" class="logo" alt="RM">
 					<h1 class="site-title"><span class="first-word">Risk</span> Management Careers</h1>
 				</a>
 			</div>
