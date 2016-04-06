@@ -69,7 +69,7 @@
 	position: sticky;
 	top: 5em;
 	margin: 5em 0;
-	align-self: flex-start;
+	align-self: center;
 	color: white;
 	
 	form {
@@ -220,6 +220,14 @@
 	}
 }
 
+@media (max-height: 700px) {
+	.wpcf7 {
+		top: 1em;
+		align-self: flex-start;
+		margin-bottom: 0;
+	}
+}
+
 @media (max-width: 500px) {
 	.book-description {
 		display: block;
@@ -230,11 +238,9 @@
 		margin-right: 0;
 	}
 	.bullets {
-		padding-top: 1em;
 		background-color: rgba(255,255,255,0.8);
 		backdrop-filter: blur(4px);
-		width: 80%;
-		margin: auto;
+		padding: 1em 10% 0;
 	}
 }
 
@@ -242,20 +248,10 @@
 	.book-description {
 		display: block;
 	}
-	.cover {
-		margin-right: 0;
-		position: static;
-	}
 }
 
 @media (max-width: 340px) {
 	.wpcf7 h2 {
 		font-size: 0.97em;
-	}
-}
-
-@media (max-height: 500px) {
-	.wpcf7 {
-		top: 1em;
 	}
 }

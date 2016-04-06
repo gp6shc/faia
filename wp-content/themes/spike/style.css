@@ -854,9 +854,9 @@ Global Classes
   position: sticky;
   top: 5em;
   margin: 5em 0;
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
   color: white; }
   .wpcf7 form {
     background-color: #95D600;
@@ -994,6 +994,14 @@ Global Classes
     position: sticky;
     top: 0em; } }
 
+@media (max-height: 700px) {
+  .wpcf7 {
+    top: 1em;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    margin-bottom: 0; } }
+
 @media (max-width: 500px) {
   .book-description {
     display: block; }
@@ -1002,27 +1010,18 @@ Global Classes
     padding-bottom: 100%;
     margin-right: 0; }
   .bullets {
-    padding-top: 1em;
     background-color: rgba(255, 255, 255, 0.8);
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
-    width: 80%;
-    margin: auto; } }
+    padding: 1em 10% 0; } }
 
 @media (max-width: 400px) {
   .book-description {
-    display: block; }
-  .cover {
-    margin-right: 0;
-    position: static; } }
+    display: block; } }
 
 @media (max-width: 340px) {
   .wpcf7 h2 {
     font-size: 0.97em; } }
-
-@media (max-height: 500px) {
-  .wpcf7 {
-    top: 1em; } }
 
 .site-footer {
   background: #58595B;
