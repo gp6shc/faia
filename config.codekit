@@ -9818,6 +9818,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/wp-content\/uploads\/2016\/02\/image-1024x1013.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 138325,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image-1024x1013.jpeg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image-1024x1013.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2016\/02\/image-150x150.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8427,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image-150x150.jpeg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image-150x150.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2016\/02\/image-300x297.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23397,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image-300x297.jpeg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image-300x297.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2016\/02\/image-768x759.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 91763,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image-768x759.jpeg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image-768x759.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2016\/02\/image.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 187452,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image.jpeg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/uploads\/2016\/02\/Slider_image_001.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
