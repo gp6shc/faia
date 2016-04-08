@@ -85,6 +85,8 @@
 		var inputEmail = document.getElementById('js-email');
 		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		var buttonCover = document.getElementById("js-disabled-catch");
+		var realButton = document.getElementById("js-submit-button");
+		var downloadForm = document.getElementById("js-download-form");
 		
 		inputEmail.addEventListener('input', checkValidEmail);
 		
@@ -116,6 +118,10 @@
 		
 		buttonCover.addEventListener('click', function() {
 			checkValidEmail();
+		});
+
+		realButton.addEventListener('click', function() {
+			downloadForm.submit();
 		});
 		
 		
