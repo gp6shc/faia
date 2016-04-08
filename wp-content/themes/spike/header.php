@@ -11,7 +11,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:image" content="/wp-content/uploads/2016/04/CareerProudv2.png">
+	<meta property="og:image" content="<?= home_url();?>/wp-content/uploads/2016/04/CareerProudv2.png">
 	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 	<?php wp_head(); ?>
 </head>
