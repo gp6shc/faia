@@ -191,3 +191,9 @@ Global Classes
 		break-inside: avoid;
 	}
 }
+
+@media (max-width: 650px) {
+	.double-column-list {
+		columns: 1;
+	}
+}

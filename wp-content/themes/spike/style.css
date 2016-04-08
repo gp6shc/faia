@@ -720,6 +720,12 @@ Global Classes
        page-break-inside: avoid;
             break-inside: avoid; }
 
+@media (max-width: 650px) {
+  .double-column-list {
+    -webkit-columns: 1;
+       -moz-columns: 1;
+            columns: 1; } }
+
 .site-header {
   border-top: 25px solid #95D600; }
 
