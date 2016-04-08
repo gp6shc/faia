@@ -11,10 +11,8 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:url" content="<?php home_url();?>"/>
-	<meta property="og:title" content="<?php wp_title('')?>"/>
+	<meta property="og:url" content="<?= home_url();?>"/>
 	<meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
-	<meta property="og:description" content="<?php the_excerpt(); ?>">
 	<meta property="og:image" content="<?= home_url();?>/wp-content/uploads/2016/04/CareerProudv2.jpg">
 	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 	<?php wp_head(); ?>
