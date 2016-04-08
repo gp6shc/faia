@@ -174,3 +174,20 @@ Global Classes
 }
 
 // Misc...
+
+.double-column-list {
+	margin: 0;
+	padding: 0;
+	columns: 2;
+	list-style: none;
+	column-gap: 50px;
+		
+	h4 {
+		color: $green;
+		margin-bottom: -0.7em;	
+	}
+	
+	li {
+		break-inside: avoid;
+	}
+}
