@@ -87,3 +87,19 @@ function spike_scripts() {
 	wp_dequeue_style( 'contact-form-7' );
 }
 add_action( 'wp_enqueue_scripts', 'spike_scripts' );
+
+// [sharebox]
+function share_box( $atts ) {
+	$url = urlencode( home_url('/') );
+	$text = urlencode('Check out "The Short Road to Long-Term Career Success"');
+	$output = '<div class="sbox"><h4>Share this free e-book:</h4><ul>';
+
+	$output .= '<li><a href="https://www.facebook.com/sharer/sharer.php?u='.$url.'"><i class="fb"></i><span>facebook</span></a></li>';
+	$output .= '<li><a href="mailto:?body='.$text.'%20'.$url.'&subject='.$text.'"><i class="em"></i><span>email</span></a></li></ul><ul>';
+	$output .= '<li><a href="https://twitter.com/intent/tweet?text='.$text.'&url='.$url.'"><i class="tw"></i><span>twitter</span></a></li>';
+	$output .= '<li><a href="whatsapp://send?text='.$text.'%20'.$url.'"><i class="wa"></i><span>whatsapp</span></a></li>';
+	
+	$output .= '</ul></div>';
+	return $output;
+}
+add_shortcode( 'sharebox', 'share_box' );
