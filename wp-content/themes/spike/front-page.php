@@ -41,7 +41,7 @@ get_header(); ?>
 								</div>
 							</div>
 							<div class="wpcf7">
-								<form action="<?php home_url();?>/thank-you" method="post" class="wpcf7-form demo" novalidate="novalidate">
+								<form action="<?= home_url();?>/thank-you" method="post" class="wpcf7-form demo" novalidate="novalidate">
 									<h2 class="green-bg">Get The Free E-Book</h2>
 									<p>Name<br /><span class="wpcf7-form-control-wrap name"><input required id="js-name" type="text" name="name" value="" size="40" aria-required="true" aria-invalid="false" /></span></p>
 									<p	>Email<br /><span class="wpcf7-form-control-wrap email"><input required id="js-email" type="email" name="email" value="" size="40"  aria-required="true" aria-invalid="false" /></span></p>
