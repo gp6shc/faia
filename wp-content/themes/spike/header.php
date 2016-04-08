@@ -20,7 +20,6 @@
 
 <body <?php body_class(); ?>>
 
-<script>dataLayer = [];</script>
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TVJRPH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

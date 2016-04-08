@@ -40,13 +40,22 @@ get_header(); ?>
 									</ul>
 								</div>
 							</div>
-							<?= do_shortcode('[contact-form-7 id="12" title="E-Book Download"]');?>
+							<div class="wpcf7">
+								<form action="/thank-you" method="post" class="wpcf7-form demo" novalidate="novalidate">
+									<h2 class="green-bg">Get The Free E-Book</h2>
+									<p>Name<br /><span class="wpcf7-form-control-wrap name"><input required id="js-name" type="text" name="name" value="" size="40" aria-required="true" aria-invalid="false" /></span></p>
+									<p	>Email<br /><span class="wpcf7-form-control-wrap email"><input required id="js-email" type="email" name="email" value="" size="40"  aria-required="true" aria-invalid="false" /></span></p>
+									<p class="submit-wrap"><span id="js-disabled-catch"></span><input type="submit" value="Download" class="wpcf7-form-control wpcf7-submit" disabled /></p>
+								</form>
+							</div>
+<!--
 							<script type="text/javascript">
 							  var __ss_noform = __ss_noform || [];
 							  __ss_noform.push(['baseURI', 'https://app-3QMU81PVCI.marketingautomation.services/webforms/receivePostback/MzawMDE2tDQxBwA/']);
 							  __ss_noform.push(['endpoint', '59001020-2c2d-4d02-9d50-e29febe50e63']);
 							</script>
 							<script type="text/javascript" src="https://koi-3QMU81PVCI.marketingautomation.services/client/noform.js?ver=1.24" ></script>
+-->
 						</div>
 						
 						

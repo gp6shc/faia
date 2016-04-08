@@ -147,6 +147,34 @@
 			background-color: $green;
 			border-color: rgba(black, 0.15);
 		}
+		
+		&:disabled {
+			background-color: mix($blue, white, 45%);
+			color: mix($blue, white, 20%);
+			cursor: no-drop;
+					
+			&.error {
+				background-color: $error;
+				border-color: rgba(black, 0.15);
+				color: white;
+			}
+		}
+	}
+}
+
+.submit-wrap {
+	position: relative;
+}
+#js-disabled-catch {
+	z-index: 100;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	
+	&.hide {
+		display: none;
 	}
 }
 

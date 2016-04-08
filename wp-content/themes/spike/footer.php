@@ -53,13 +53,13 @@
 			},750);
 		}
 
-		function errorAnimation() {
+		function errorAnimation( string ) {
 			clearTimeout(timerOut);
-			console.log("error!");
+// 			console.log("error!");
 			dlButton.addEventListener('click', loadAnimation);
 			dlButton.classList.remove('loading');
 			dlButton.classList.add('error');
-			dlButton.value = "Error!";
+			dlButton.value = string;
 			setTimeout(function(){
 				dlButton.classList.remove('error');
 				dlButton.value = "Download";
@@ -68,7 +68,7 @@
 
 		function successAnimation() {
 			clearTimeout(timerOut);
-			console.log("success!");
+// 			console.log("success!");
 			dlButton.classList.remove('loading');
 			dlButton.classList.add('success');
 			dlButton.value = "Success!";
@@ -81,26 +81,41 @@
 		
 		dlButton.addEventListener('click', loadAnimation);
 		
-		jQuery(document).on('invalid.wpcf7', function () {
-			errorAnimation();
+		var inputName = document.getElementById('js-name');
+		var inputEmail = document.getElementById('js-email');
+		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		var buttonCover = document.getElementById("js-disabled-catch");
+		
+		inputEmail.addEventListener('input', checkValidEmail);
+		
+/*
+		inputEmail.addEventListener('blur', function() {
+			if ( !re.test(inputEmail.value) ) errorAnimation("valid email?");
 		});
-		jQuery(document).on('spam.wpcf7', function () {
-			errorAnimation();
-		});
-		jQuery(document).on('mailfailed.wpcf7', function () {
-			errorAnimation();
-		});
-
-		jQuery(document).on('mailsent.wpcf7', function () {
-			successAnimation();
+*/
 			
-			var data = jQuery('.wpcf7-form').serializeArray();
-			
-			dataLayer.push({
-			  'name': data[5].value,
-			  'email': data[6].value,
-			  'event': 'bookDownload'
-			});
+		function checkValidEmail() {
+			if (inputName.value.length < 1) {
+				dlButton.disabled = true;
+				buttonCover.classList.remove("hide");
+				console.log("error: no name");
+				errorAnimation( "Enter a name" );
+				return;
+			}
+			if ( re.test(inputEmail.value) ) {
+				dlButton.disabled = false;
+				buttonCover.classList.add("hide");
+				console.log("success");
+			}else{
+				console.log("error: bad email");
+				errorAnimation( "valid email?" );
+				dlButton.disabled = true;
+				buttonCover.classList.remove("hide");
+			}
+		}
+		
+		buttonCover.addEventListener('click', function() {
+			checkValidEmail();
 		});
 		
 		

@@ -952,6 +952,27 @@ Global Classes
     .wpcf7 input[type='submit'].success {
       background-color: #95D600;
       border-color: rgba(0, 0, 0, 0.15); }
+    .wpcf7 input[type='submit']:disabled {
+      background-color: #8ca1bd;
+      color: #ccd5e2;
+      cursor: no-drop; }
+      .wpcf7 input[type='submit']:disabled.error {
+        background-color: #fa5e5e;
+        border-color: rgba(0, 0, 0, 0.15);
+        color: white; }
+
+.submit-wrap {
+  position: relative; }
+
+#js-disabled-catch {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  #js-disabled-catch.hide {
+    display: none; }
 
 @-webkit-keyframes move-bg {
   0% {
