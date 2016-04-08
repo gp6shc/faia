@@ -91,7 +91,7 @@ add_action( 'wp_enqueue_scripts', 'spike_scripts' );
 // [sharebox]
 function share_box( $atts ) {
 	$url = urlencode( home_url('/') );
-	$text = urlencode('Check out "The Short Road to Long-Term Career Success"');
+	$text = rawurlencode('Check out "The Short Road to Long-Term Career Success"');
 	$output = '<div class="sbox"><h2 class="green-bg">Share this free e-book:</h2><ul>';
 
 	$output .= '<li><a href="https://www.facebook.com/sharer/sharer.php?u='.$url.'"><i class="fb"></i><span>facebook</span></a></li>';
