@@ -48,14 +48,12 @@ get_header(); ?>
 									<p class="submit-wrap"><span id="js-disabled-catch"></span><input type="submit" value="Download" class="wpcf7-form-control wpcf7-submit" disabled /></p>
 								</form>
 							</div>
-<!--
 							<script type="text/javascript">
 							  var __ss_noform = __ss_noform || [];
 							  __ss_noform.push(['baseURI', 'https://app-3QMU81PVCI.marketingautomation.services/webforms/receivePostback/MzawMDE2tDQxBwA/']);
 							  __ss_noform.push(['endpoint', '59001020-2c2d-4d02-9d50-e29febe50e63']);
 							</script>
 							<script type="text/javascript" src="https://koi-3QMU81PVCI.marketingautomation.services/client/noform.js?ver=1.24" ></script>
--->
 						</div>
 						
 						
