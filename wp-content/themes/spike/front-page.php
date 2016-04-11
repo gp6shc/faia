@@ -1,7 +1,4 @@
-<?php echo '<pre>';
-var_dump($_POST);
-echo '</pre>';
-
+<?php
 if( isset($_POST['submitted'])) {
 	wp_redirect(home_url('/thank-you'), 302);
 }
