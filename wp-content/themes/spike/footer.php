@@ -120,6 +120,7 @@
 			checkValidEmail();
 		});
 
+/*
 		realButton.addEventListener('click', function() {
 				// This is for you sharpspring... uggghhghg
 				downloadForm.submit();
@@ -127,6 +128,7 @@
 						location = "/thank-you";
 					}, 3500);
 		});
+*/
 		
 		
 	</script>
