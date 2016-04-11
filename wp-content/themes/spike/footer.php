@@ -125,7 +125,7 @@
 				// This is for you sharpspring... uggghhghg
 				setTimeout(function() {
 						location = "/thank-you";
-					}, 2500);
+					}, 3500);
 		});
 		
 		
