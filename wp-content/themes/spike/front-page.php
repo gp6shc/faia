@@ -1,8 +1,3 @@
-<?php if( isset($_POST['name']) && isset($_POST['email']) ) {
-		wp_redirect("/thank-you", 302);
-	}
-?>
-
 <?php
 /**
  * The template for displaying all pages.
@@ -46,7 +41,7 @@ get_header(); ?>
 								</div>
 							</div>
 							<div class="wpcf7">
-								<form id="js-download-form" action="<?php the_permalink(); ?>/thank-you" method="post" class="wpcf7-form demo" novalidate="novalidate">
+								<form id="js-download-form" action="/thank-you" method="post" class="wpcf7-form demo" novalidate="novalidate">
 									<h2 class="green-bg">Get The Free E-Book</h2>
 									<p>Name<br /><span class="wpcf7-form-control-wrap name"><input required id="js-name" type="text" name="name" value="" size="40" aria-required="true" aria-invalid="false" /></span></p>
 									<p	>Email<br /><span class="wpcf7-form-control-wrap email"><input required id="js-email" type="email" name="email" value="" size="40"  aria-required="true" aria-invalid="false" /></span></p>
