@@ -85,9 +85,7 @@
 		var inputEmail = document.getElementById('js-email');
 		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		var buttonCover = document.getElementById("js-disabled-catch");
-// 		var realButton = document.getElementById("js-submit-button");
-// 		var downloadForm = document.getElementById("js-download-form");
-		
+		var erroring = false;
 		inputEmail.addEventListener('input', checkValidEmail);
 			
 		function checkValidEmail() {
@@ -97,16 +95,21 @@
 				console.log("error: no name");
 				errorAnimation( "Enter a name" );
 				return;
-			}
+			} 
+			
 			if ( re.test(inputEmail.value) ) {
 				dlButton.disabled = false;
 				buttonCover.classList.add("hide");
 				console.log("success");
 			}else{
-				console.log("error: bad email");
-				errorAnimation( "valid email?" );
-				dlButton.disabled = true;
-				buttonCover.classList.remove("hide");
+				if (!erroring) {
+					erroring = true;
+					console.log("error: bad email");
+					errorAnimation( "valid email?" );
+					dlButton.disabled = true;
+					buttonCover.classList.remove("hide");
+					setTimeout(function() {erroring = false;}, 2450);
+				}
 			}
 		}
 		
@@ -114,17 +117,7 @@
 			checkValidEmail();
 		});
 
-/*
-		realButton.addEventListener('click', function() {
-				// This is for you sharpspring... uggghhghg
-				downloadForm.submit();
-				setTimeout(function() {
-						location = "/thank-you";
-					}, 3500);
-		});
-*/
-		
-		
+
 	</script>
 <?php endif;?>
 <?php wp_footer(); ?>
