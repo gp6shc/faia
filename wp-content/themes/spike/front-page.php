@@ -2,6 +2,10 @@
 var_dump($_POST);
 echo '</pre>';
 
+if( isset($_POST['submitted'])) {
+	wp_redirect(home_url('/thank-you'), 302);
+}
+
 /**
  * The template for displaying all pages.
  *
@@ -44,10 +48,11 @@ get_header(); ?>
 								</div>
 							</div>
 							<div class="wpcf7">
-								<form id="js-download-form" action="" method="post" class="wpcf7-form demo" novalidate="novalidate">
+								<form id="js-download-form" action="" method="post" name="wpcf" class="wpcf7-form demo" novalidate="novalidate">
 									<h2 class="green-bg">Get The Free E-Book</h2>
-									<p>Name<br /><span class="wpcf7-form-control-wrap name"><input required id="js-name" type="text" name="name" value="" size="40" aria-required="true" aria-invalid="false" /></span></p>
-									<p	>Email<br /><span class="wpcf7-form-control-wrap email"><input required id="js-email" type="email" name="email" value="" size="40"  aria-required="true" aria-invalid="false" /></span></p>
+									<p>Name<br /><span class="wpcf7-form-control-wrap name"><input required id="js-name" type="text" name="dl-name" value="" size="40" aria-required="true" aria-invalid="false" /></span></p>
+									<p	>Email<br /><span class="wpcf7-form-control-wrap email"><input required id="js-email" type="email" name="dl-email" value="" size="40"  aria-required="true" aria-invalid="false" /></span></p>
+									<input type="hidden" name="submitted" />
 									<p class="submit-wrap"><span id="js-disabled-catch"></span><input type="submit" id="js-submit-button" value="Download" class="wpcf7-form-control wpcf7-submit" disabled /></p>
 								</form>
 							</div>
