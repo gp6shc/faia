@@ -121,8 +121,8 @@
 		});
 
 		realButton.addEventListener('click', function() {
-				// downloadForm.submit();
 				// This is for you sharpspring... uggghhghg
+				downloadForm.submit();
 				setTimeout(function() {
 						location = "/thank-you";
 					}, 3500);
