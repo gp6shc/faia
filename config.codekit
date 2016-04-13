@@ -9339,7 +9339,7 @@
 		"outputAbbreviatedPath": "\/wp-content\/themes\/spike\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -9827,7 +9827,7 @@
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image-1024x1013.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/wp-content\/uploads\/2016\/02\/image-150x150.jpeg": {
 		"fileType": 16384,
@@ -9838,7 +9838,7 @@
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image-150x150.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/wp-content\/uploads\/2016\/02\/image-300x297.jpeg": {
 		"fileType": 16384,
@@ -9849,7 +9849,7 @@
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image-300x297.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/wp-content\/uploads\/2016\/02\/image-768x759.jpeg": {
 		"fileType": 16384,
@@ -9860,7 +9860,7 @@
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image-768x759.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/wp-content\/uploads\/2016\/02\/image.jpeg": {
 		"fileType": 16384,
@@ -9871,7 +9871,7 @@
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2016\/02\/image.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/wp-content\/uploads\/2016\/02\/Slider_image_001.jpg": {
 		"fileType": 16384,
