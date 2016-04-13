@@ -53,13 +53,13 @@
 			},750);
 		}
 
-		function errorAnimation( string ) {
+		function errorAnimation() {
 			clearTimeout(timerOut);
-// 			console.log("error!");
+			console.log("error!");
 			dlButton.addEventListener('click', loadAnimation);
 			dlButton.classList.remove('loading');
 			dlButton.classList.add('error');
-			dlButton.value = string;
+			dlButton.value = "Error!";
 			setTimeout(function(){
 				dlButton.classList.remove('error');
 				dlButton.value = "Download";
@@ -68,7 +68,7 @@
 
 		function successAnimation() {
 			clearTimeout(timerOut);
-// 			console.log("success!");
+			console.log("success!");
 			dlButton.classList.remove('loading');
 			dlButton.classList.add('success');
 			dlButton.value = "Success!";
@@ -81,43 +81,16 @@
 		
 		dlButton.addEventListener('click', loadAnimation);
 		
-		var inputName = document.getElementById('js-name');
-		var inputEmail = document.getElementById('js-email');
-		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-		var buttonCover = document.getElementById("js-disabled-catch");
-		var erroring = false;
-		inputEmail.addEventListener('input', checkValidEmail);
-			
-		function checkValidEmail() {
-			if (inputName.value.length < 1) {
-				dlButton.disabled = true;
-				buttonCover.classList.remove("hide");
-				console.log("error: no name");
-				errorAnimation( "Enter a name" );
-				return;
-			} 
-			
-			if ( re.test(inputEmail.value) ) {
-				dlButton.disabled = false;
-				buttonCover.classList.add("hide");
-				console.log("success");
-			}else{
-				if (!erroring) {
-					erroring = true;
-					console.log("error: bad email");
-					errorAnimation( "valid email?" );
-					dlButton.disabled = true;
-					buttonCover.classList.remove("hide");
-					setTimeout(function() {erroring = false;}, 2450);
-				}
-			}
-		}
-		
-		buttonCover.addEventListener('click', function() {
-			checkValidEmail();
+		jQuery(document).on('invalid.wpcf7', function () {
+			errorAnimation();
 		});
-
-
+		jQuery(document).on('spam.wpcf7', function () {
+			errorAnimation();
+		});
+		jQuery(document).on('mailfailed.wpcf7', function () {
+			errorAnimation();
+		});		
+		
 	</script>
 <?php endif;?>
 <?php wp_footer(); ?>
