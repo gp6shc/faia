@@ -19,10 +19,10 @@
 						<?php $fields = get_fields();?>
 						
 						<?php foreach ($fields['resources'] as $resource): ?>
-						<div style="text-align:center">
+						<div style="">
 							<div style="display:inline-block">
 								<a href="<?= $resource['link'] ?>"rel="">
-									<img src="<?= $resource['image'] ?>"/>
+									<img src="<?= $resource['image']['sizes']['medium'] ?>"/>
 								</a>
 								<h4><a href="<?= $resource['link'] ?>"rel=""><?= $resource['title'] ?></a></h4>
 							</div>
