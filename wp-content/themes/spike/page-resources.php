@@ -18,16 +18,17 @@
 
 						<?php $fields = get_fields();?>
 						
-						<?php foreach ($fields['resources'] as $resource): ?>
 						<div style="text-align:center">
+						<?php foreach ($fields['resources'] as $resource): ?>
 							<div style="display:inline-block">
 								<a href="<?= $resource['link'] ?>"rel="">
 									<?= wp_get_attachment_image($resource['image'], 'medium'); ?>
 								</a>
 								<h4><a href="<?= $resource['link'] ?>"rel=""><?= $resource['title'] ?></a></h4>
 							</div>
-						</div>
 						<?php endforeach; ?>
+						</div>
+						
 						<?php
 							wp_link_pages( array(
 								'before' => '<div class="page-links">' . __( 'Pages:', 'spike' ),
