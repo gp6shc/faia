@@ -22,10 +22,12 @@
 						<?php foreach ($fields['locations'] as $location): ?>
 							<li>
 								<h4><?= $location['name'] ?></h4>
-								<b>Location:</b> <?= $location['location'] ?>
-								<b>Contact:</b> <?= $location['contact'] ?>
-								<b>Email:</b> <a href="mailto:<?= $location['email'] ?>"><?= $location['email'] ?></a>
-								<b>Website:</b> <a href="http://<?= $location['website'] ?>"><?= $location['website'] ?></a>
+								<p>
+									<b>Location:</b> <?= $location['location'] ?><br/>
+									<b>Contact:</b> <?= $location['contact'] ?><br/>
+									<b>Email:</b> <a href="mailto:<?= $location['email'] ?>"><?= $location['email'] ?></a><br/>
+									<b>Website:</b> <a href="http://<?= $location['website'] ?>"><?= $location['website'] ?></a><br/>
+								</p>
 							</li>
 						<?php endforeach; ?>
 						</ul>
